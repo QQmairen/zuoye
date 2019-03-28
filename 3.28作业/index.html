@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			body,ul,li,h2,h4,p,strong,span,em,i{
+				margin: 0;
+				padding: 0;
+				font-style: normal;
+				font-weight: normal;
+			}
+			a{
+				text-decoration: none;
+			}
+			li{
+				list-style: none;
+				}
+			.head {
+				background: #007ae1;
+				color: #fff;
+			}
+			
+			.w1004 {
+				width: 1004px;
+				margin: 0 auto;
+			}
+			
+			.hello {
+				height: 33px;
+			}
+			
+			.hello span {
+				font-size: 14px;
+				margin-left: 28px;
+				margin-top: 10px;
+				height: 33px;
+				line-height: 33px;
+			}
+			
+			.hello em,i {
+				font-size: 14px;
+				font-style: normal;
+				height: 33px;
+				line-height: 33px;
+				margin-top: 10px;
+			}
+			
+			.you {
+				float: right;
+			}
+			
+			.nav {
+				background: #eee;
+				width: 100%;
+				height: 97px;
+			}
+			
+			.nav top {
+				overflow: hidden;
+				width: 1004px;
+			}
+			
+			.nav .loge {
+				float: left;
+				width: 168px;
+				height: 56px;
+				margin: 22px 0 20px 0;
+			}
+			
+			.loge img {
+				margin-left: 28px;
+				width: 168px;
+				height: 56px;
+			}
+			
+			.daohang {
+				float: right;
+				width: 723px;
+				height: 97px;
+			}
+			
+			.daohang ul {
+				width: 723px;
+				height: 97px;
+				margin-right: 23px;
+				float: right;
+				text-align: center;
+				line-height: 97px;
+			}
+			
+			.daohang ul li {
+				list-style: none;
+				margin-right: 54px;
+				float: left;
+			}
+			
+			.daohang ul .li {
+				margin-right: 0px;
+			}
+			
+			.daohang ul li a {
+				text-decoration: none;
+				font-size: 18px;
+				color: #494949;
+			}
+			
+			.daohang ul li a:hover {
+				color: #007ae1;
+				border-bottom: #007ae1 3px solid;
+			}
+			
+			.team {
+				width: 100%;
+				height: 514px;
+				background-image: url(img/baiyun.png);
+				position: relative;
+			}
+			.team ul{
+				position: absolute;
+				left: 50%;
+		        margin-left: -138px;
+				margin-top: 490px;
+			}
+			.team .on{
+				background:#ff0000 ;
+			}
+			.team ul li{
+				height: 5px;
+				width: 62px;
+				background:#d8d8d8 ;
+				float: left;
+				margin-right: 20px;
+			}		
+			
+			
+			.we {
+				background-color: #007AE1;
+				background-image: url(img/lingxing1.jpg);
+				background-position: left top;
+				background-size: 100% 100%;
+				width: 100%;
+				color: #fff;
+				height: 501px;
+			}
+			
+			.we .content .about{
+				height: 88px;
+			    line-height: 88px;
+				padding-left: 6px;
+				width: 998px;
+				background: url(img/jiantou.png) no-repeat 238px 26px;
+			}
+			.we .content h2{
+				font-size: 30px;
+			}
+			
+			.we .content span {
+				font-size: 18px;
+				margin-left: 12px;
+			}
+			
+			.we .content h4 {
+				font-size: 24px;
+				height: 57px;
+				line-height: 57px;
+				text-align: center;
+				overflow: hidden;
+			}
+			
+			.we .content .neirong {
+				margin: 8px 50px 24px 51px;
+				height: 320px;
+				overflow: hidden;
+			}
+			
+			.we .content p {
+				text-indent: 2em;
+			
+				line-height: 40px;
+				font-size: 18px;
+				overflow: hidden;
+			}
+			
+			.serve {
+				width: 100%;
+				height: 552px;
+				background-image: url(img/circle1.png);
+				color: #fff;
+			}
+			.serve .fuwu .area{
+				height: 88px;
+			    line-height: 88px;
+				padding-left: 6px;
+				width: 998px;
+				background: url(img/jiantou.png) no-repeat 238px 26px;
+			}
+			
+			}
+			.serve .fuwu .area h2{
+				font-size: 30px;
+			}
+			
+			.serve .fuwu .area span{
+				font-size: 18px;
+				margin-left: 12px;
+			}
+			.serve .list{
+				overflow: hidden;
+			}
+			
+			.fuwu .list .tu1,.tu2,.tu3,.tu4{
+				width: 172px;
+				height: 188px;
+				background: #4db5f7;
+			    margin-right:26px ;
+				}
+			.fuwu .list .tu5{
+				width: 172px;
+				height: 188px;
+				background: #4db5f7;
+			}
+			.fuwu .list .tu1 img{
+				margin-top:26px;
+				margin-left: 38px;
+			}
+			.fuwu .list .tu1 p{
+				display: block;
+				font-size: 18px;
+				margin-top: 24px;
+				margin-left: 27px;
+				}
+				.fuwu .list .tu1,.tu2,.tu3,.tu4,.tu5{
+					float: left;
+				}
+				.fuwu .list .tu2 img{
+				margin-top:26px;
+				margin-left: 38px;
+			}
+			.fuwu .list .tu2 p{
+				display: block;
+				font-size: 18px;
+				margin-top: 24px;
+				margin-left: 11px;
+				}
+			.fuwu .list .tu3 img{
+				margin-top:26px;
+				margin-left: 38px;
+			}
+			.fuwu .list .tu3 p{
+				display: block;
+				font-size: 18px;
+				margin-top: 24px;
+				margin-left: 27px;
+				}
+			.fuwu .list .tu4 img{
+				margin-top:26px;
+				margin-left: 38px;
+			}
+			.fuwu .list .tu4 p{
+				display: block;
+				font-size: 18px;
+				
+				margin-top: 24px;
+				margin-left: 27px;
+				}
+			.fuwu .list .tu5 img{
+				margin-top:26px;
+				margin-left: 38px;
+			}
+			.fuwu .list .tu5 p{
+				display: block;
+				font-size: 18px;
+				margin-top: 24px;
+				margin-left: 27px;
+				}
+				.fuwu .better{
+					clear: both;
+					background: #fff;
+					height: 138px;
+					margin-top:58px;
+				}
+				.fuwu .better .youhua{
+					float: left;
+					margin-left: 28px;
+					
+				}
+				.fuwu .better .youhua h4{
+					margin-top: 20px;
+					margin-left: 30px;
+					font-size: 32px;
+					color: #585858;
+				}
+				.fuwu .better .youhua p{
+					display: block;
+					width: 660px;
+					font-size: 16px;
+					height: 60px;
+					line-height: 28px;
+					overflow: hidden;
+					color: #9a9a9a;
+					margin-left: 32px;
+					margin-top: 6px;
+				}
+				.fuwu .detail{
+					background: #328ad7;
+					width: 192px;
+					height: 54px;
+					float:right;
+					margin: 40px 40px 40px 0;
+					}
+				.fuwu .detail a img{
+					margin: 12px 0 12px 26px;
+					}
+				.fuwu .detail a span{
+						display: block;
+						float: right;
+						font-size: 22px;
+						color: #e0ebf7;
+						margin: 12px 26px 16px 0px;
+				}
+				.ex{
+			    overflow: hidden;
+				width: 100%;
+				height: 730px;
+				background-image:url(img/lingxing3.png);
+				color: #fff;
+				
+			}
+			.ex .anli .zhanshi{
+				height: 88px;
+			    line-height: 88px;
+				padding-left: 6px;
+				width: 998px;
+				background: url(img/jiantou.png) no-repeat 238px 26px;
+			}
+			
+			}
+			.ex .anli .zhanshi h2{
+				font-size: 30px;
+			}
+			
+			.ex .anli .zhanshi span {
+				font-size: 18px;
+				margin-left: 12px;
+			}
+			.hang1 ul{
+				height: 270px;
+				margin-top: 58px;
+			}
+			
+			.hang1 ul li{
+				float: left;
+				margin-left: 30px;
+			}
+			.hang1 ul li:first-child{
+				margin-left: 0;
+				}
+			.hang1 ul li p{
+				display: block;
+				margin-left: 102px;
+				font-size: 22px;
+				margin-top: 12px;
+			}
+			.hang1 ul{
+				height: 270px;
+			}
+			.hang2{
+				overflow: hidden;
+				margin-top: 22px;
+			}
+			.hang2 ul li{
+				float: left;
+				margin-left: 30px;
+			}
+			.hang2 ul li:first-child{
+				margin-left: 0;
+				}
+			.hang2 ul li p{
+				display: block;
+				margin-left: 102px;
+				font-size: 22px;
+				margin-top: 12px;
+			}
+		
+			.news{
+				overflow: hidden;
+				width: 100%;
+				height: 514px;
+				background-image:url(img/circle2.png);
+				color: #fff;
+			}
+			.news .na{
+				height: 514px;
+					
+			}
+			.news .na .NN{
+				height: 88px;
+			    line-height: 88px;
+				padding-left: 6px;
+				width: 998px;
+				background: url(img/jiantou.png) no-repeat 274px 26px;
+			}
+			.news .na .NN h2{
+				font-size: 30px;
+			}
+			
+			.news .na .NN span{
+				font-size: 18px;
+				margin-left: 12px;
+			}
+			
+			
+			.news .na .left{
+				float: left;
+			}
+			
+			.news .na .left h4{
+				font-size: 28px;
+			}
+			.news .na .left span{
+				font-size: 14px;
+			}
+			.news .na .left a{
+				font-size: 16px;
+				color: #fff;
+				
+			}
+			.news .na .left ul{
+				width: 462px;
+				height: 310px;
+				margin-top: 30px;
+				font-size:16px;
+			}
+			.news .na .left ul li{
+				line-height: 30px;
+				overflow: hidden;
+			}
+			.news .na .left ul li strong{
+				margin-left:42px;
+			}
+			.news .na .right{
+				float: right;
+				margin-left: 68px;
+			}
+			.news .na .right h4{
+				font-size: 28px;
+			}
+			
+			.news .na .right a{
+				font-size: 16px;
+			}
+			.news .na .right a{
+				font-size: 16px;
+				color: #fff;
+			}
+			.news .na .right ul{
+				width: 462px;
+				height: 310px;
+				margin-top: 30px;
+				font-size:16px;
+			}
+			.news .na .right ul li{
+				line-height: 30px;
+				overflow: hidden;
+			}
+			.news .na .right ul li strong{
+				margin-left:42px;
+			}
+			.friend{
+				width: 100%;
+				background: #eee;
+				overflow: hidden;
+				height: 222px;
+			}
+			.friend .partner{
+				overflow: hidden;
+			}
+			.friend .partner .hezuo{
+				font-size: 24px;
+				color: #027cc5;
+				height: 46px;
+				line-height: 46px;
+				margin-left: 16px;
+				margin-top: 28px;
+			}
+			.friend .partner .hezuo span{
+				margin-left: 6px;
+			}
+			.friend .partner ul{
+				width: 1002px;
+				height: 72px;
+				float: left;
+				margin-top: 25px;
+				background:#fff ;
+				border:#858585 1px solid;
+			}
+			.friend .partner ul li:first-child{
+				margin-right:26px;
+				margin-top: 25px;
+			}
+			.friend .partner ul li:last-child{
+				margin-right:26px;
+				margin-top: 25px;
+			}
+			.friend .partner ul li{
+				float: left;
+				margin-right: 58px;
+				margin-top: 20px;
+			}
+			
+			.bottom{
+				width: 100%;
+				background: #0a98e0;
+				overflow: hidden;
+			}
+			.bottom .end{
+				color: #fff;
+				font-size: 12px;
+				text-align: center;
+				height: 110px;
+			}
+			.bottom .end .last{
+				height: 58px;
+				margin-top: 20px;
+				overflow: hidden;
+			}
+			.bottom .end p{
+				line-height: 30px;
+				height: 30px;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="head">
+			<div class="hello w1004">
+				<span>您好，欢迎访问“无比网络技术有限公司”网站!</span>
+				<div class="you">
+					<em><a href="javascript">设为首页</a></em>
+					<i><a href="javascript">收藏本站</a></i>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="top w1004">
+				<div class="loge">
+					<a href="javascript:;">
+						<img src="img/loge.png" />
+					</a>
+					
+				</div>
+				<div class="daohang">
+
+					<ul>
+						<li>
+							<a href="javascript:;">网站首页</a>
+						</li>
+						<li>
+							<a href="javascript:;">公司简介</a>
+						</li>
+						<li>
+							<a href="javascript:;">产品及服务</a>
+						</li>
+						<li>
+							<a href="javascript:;">案例展示</a>
+						</li>
+						<li>
+							<a href="javascript:;">新闻动态</a>
+						</li>
+						<li class="li">
+							<a href="javascript:;">联系我们</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="team">
+			<ul>
+				<li></li>
+				<li></li>
+				<li class="on"></li>
+			</ul>
+		</div>
+		<div class="we">
+			<div class="content w1004">
+				<div class="about"><h2>关于我们<span>About us</span></h2></div>
+				<h4>武汉无比网络科技有限公司</h4>
+				<div class="neirong">
+					<p>武汉无比网络科技有限公司成立于2013年，是一批专注于网络技术研发及解决网络营销方案的优质团队，我们具有丰富的网络项目实战经验，精通于各行业类网站及系统项目的合计与开发。</p>
+					<p>我们致力于为客户提供基于互联网的高品质技术支持与各类网络业务服务，包括网站开发、电脑及手机端在线软件系统研发、微信公众平台开发、商城系统开发、门户网站开发、网站SEO优化、域名注册、服务器/虚拟主机租售、400电话、短讯群发、短信接口、企业邮箱等。无比网络拥有无与伦比的决心，无与伦比的服务，无与伦比的技术，无与伦比的战略团队。</p>
+					<p>我们秉承“一切为客户考虑”的服务理念，坚持做到让客户没有后顾之忧，我们用心提供最优质的服务及技术支持，只为换来您的无比满意。我们真诚期待与您的合作，我们将共同营造一个美好的互联网时代！</p>
+				</div>
+			</div>
+		</div>
+		<div class="serve">
+			<div class="fuwu w1004">
+				<div class="area"><h2>服务范围<span>Service area</span></h2></div>
+				<div class="list">
+					<div class="tu1">
+						<img src="img/ee.png"/><p>网站建设开发</p>
+					</div>
+					<div class="tu2">
+						<img src="img/lun.png"/><p>网站建设开发</p>
+					</div>
+					<div class="tu3">
+						<img src="img/xin.png"/><p>在线OA系统开发</p>
+					</div>
+					<div class="tu4">
+						<img src="img/yunyun.png"/><p>微信平台开发</p>
+					</div>
+					<div class="tu5">
+						<img src="img/people.png"/><p>云服务&域名</p>
+					</div>
+				</div>
+				<div class="better w1004">
+					<div class="youhua">	
+					<h4>优化&推广</h4>
+					<p>拥有网站后，最重要的便是优化和推广，在这方面，我们拥有非常优秀的战略伙伴，帮您完成
+网站优化与推广这项能为您带来无限商机的重要服务——推广，创造商机！</p>
+					</div>
+              <div class="detail">
+              	<a href="javascript:;"><img src="img/yuncai.png"/>
+              	<span>详细介绍</span>
+              	</a>
+              </div>
+				</div>
+			</div>
+			</div>
+			<div class="ex">
+				<div class="anli w1004">
+					<div class="zhanshi"><h2>案例展示 <span>Case Show</span></h2></div>
+					<div class="hang1">
+						<ul>
+						<li><img src="img/mg1.png"/><p>爱达荷大学</p></li>
+						<li><img src="img/mg2.png"/><p>冠军堡犬舍</p></li>
+				        <li><img src="img/mg3.png"/><p>恒大木业</p></li>
+					</ul>
+					</div>
+					<div class="hang2">
+						<ul>
+						<li><img src="img/mg1.png"/><p>爱达荷大学</p></li>
+						<li><img src="img/mg2.png"/><p>冠军堡犬舍</p></li>
+				        <li><img src="img/mg3.png"/><p>恒大木业</p></li>
+					</ul>
+					</div>
+				</div>
+			</div>
+			<div class="news">
+				<div class="na w1004">
+					<div class="NN"><h2>新闻中心<span>News center</span></h2></div>
+					
+						<div class="left">
+							<h4>行业资讯<span>Industry information</span>
+							<a href="javascript:;">MORE +</a>
+						</h4>
+						<ul>
+						<li>为何程序员都爱熬夜？为什么喜欢夜间工作？<strong>[2015/03/12]</strong></li>
+						<li>为何程序员都爱熬夜？为什么喜欢夜间工作？<strong>[2015/03/12]</strong></li>
+						<li>为何程序员都爱熬夜？为什么喜欢夜间工作？<strong>[2015/03/12]</strong></li>
+						<li>为何程序员都爱熬夜？为什么喜欢夜间工作？<strong>[2015/03/12]</strong></li>
+						<li>为何程序员都爱熬夜？为什么喜欢夜间工作？<strong>[2015/03/12]</strong></li>
+						<li>为何程序员都爱熬夜？为什么喜欢夜间工作？<strong>[2015/03/12]</strong></li>
+						<li>为何程序员都爱熬夜？为什么喜欢夜间工作？<strong>[2015/03/12]</strong></li>
+						<li>为何程序员都爱熬夜？为什么喜欢夜间工作？<strong>[2015/03/12]</strong></li>
+						<li>为何程序员都爱熬夜？为什么喜欢夜间工作？<strong>[2015/03/12]</strong></li>
+						<li>为何程序员都爱熬夜？为什么喜欢夜间工作？<strong>[2015/03/12]</strong></li>
+					</ul>
+					</div>
+					<div class="right">
+						<h4>最新动态<span>Dynamic news</span>
+							<a href="javascript:;">MORE +</a>
+					    </h4>
+						<ul>
+							<li>无比网络2015年“清明节”放假通知 <strong>[2015/03/12]</strong></li>
+							<li>无比网络2015年“清明节”放假通知 <strong>[2015/03/12]</strong></li>
+							<li>无比网络2015年“清明节”放假通知 <strong>[2015/03/12]</strong></li>
+							<li>无比网络2015年“清明节”放假通知 <strong>[2015/03/12]</strong></li>
+							<li>无比网络2015年“清明节”放假通知 <strong>[2015/03/12]</strong></li>
+							<li>无比网络2015年“清明节”放假通知 <strong>[2015/03/12]</strong></li>
+							<li>无比网络2015年“清明节”放假通知 <strong>[2015/03/12]</strong></li>
+							<li>无比网络2015年“清明节”放假通知 <strong>[2015/03/12]</strong></li>
+							<li>无比网络2015年“清明节”放假通知 <strong>[2015/03/12]</strong></li>
+							<li>无比网络2015年“清明节”放假通知 <strong>[2015/03/12]</strong></li>
+						</ul>
+					</div>
+				</div>
+               </div>
+			<div class="friend">
+				<div class="partner w1004">
+					<div class="hezuo"><img src="img/friend.png"/><span>合作伙伴</span></div>
+					<div class="good">
+						<ul>
+							<li><a href="javascript:;"><img src="img/left.png"/></a></li>
+							<li><a href="javascript:;"><img src="img/qq.png"/></a></li>
+							<li><a href="javascript:;"><img src="img/internet.png"/></a></li>
+							<li><a href="javascript:;"><img src="img/shuma.png"/></a></li>
+							<li><a href="javascript:;"><img src="img/ali.png"/></a></li>
+							<li><a href="javascript:;"><img src="img/right.png"/></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="end w1004">	
+					<div class="last">
+						<p>版权所有 Copyright ©2013-2014 武汉无比网络科技有限公司 wubinet.com All Rights Reserved  网站备案号：鄂ICP备14000102号</p>
+					<p>咨询热线：400-996-9927  E-mail：wubinet@qq.com  地址：武汉市武昌区中南路10号鹏程时代1216室</p>
+					</div>
+				</div>
+				
+			</div>
+		
+	</body>
+
+</html>
